@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
+ */
 package test.temperatura;
 
 import org.junit.After;
@@ -9,7 +13,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Carlos ExpÃ³sito.
+ * @author carlo
  */
 public class TestTemperaturaTest {
     
@@ -33,111 +37,33 @@ public class TestTemperaturaTest {
     }
 
     /**
-     * Test donde se comprueba la soluciÃ³n con -5 grados ÂºF a ÂºC
+     * Test of fahrenheittocelsius method, of class TestTemperatura.
      */
     @Test
-    public void testFahrenheittocelsiu_5() {
-        System.out.println("fahrenheittocelsius");
-        double num = -5.0;
-        double expResult = -20.5556;
-        double result = TestTemperatura.fahrenheittocelsius(num);
-        assertEquals(expResult, result, 0.0001);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-    /**
-     * Test donde se comprueba la soluciÃ³n con 0 grados ÂºF a ÂºC
-     */
-    @Test
-    public void testFahrenheittocelsius_0() {
+    public void testFahrenheittocelsius() {
         System.out.println("fahrenheittocelsius");
         double num = 0.0;
-        double expResult = -17.7778;
-        double result = TestTemperatura.fahrenheittocelsius(num);
-        assertEquals(expResult, result, 0.0001);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-    /**
-     * Test donde se comprueba la soluciÃ³n con 15 grados ÂºF a ÂºC
-     */
-    @Test
-    public void testFahrenheittocelsius_15() {
-        System.out.println("fahrenheittocelsius");
-        double num = 15.0;
-        double expResult = -9.4444;
-        double result = TestTemperatura.fahrenheittocelsius(num);
-        assertEquals(expResult, result, 0.0001);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-    /**
-     * Test donde se comprueba la soluciÃ³n con 32 grados ÂºF a ÂºC
-     */
-    @Test
-    public void testFahrenheittocelsius_32() {
-        System.out.println("fahrenheittocelsius");
-        double num = 32.0;
         double expResult = 0.0;
         double result = TestTemperatura.fahrenheittocelsius(num);
-        assertEquals(expResult, result, 0.0001);
+        assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
-     * Test donde se comprueba la soluciÃ³n con -5 grados ÂºC a ÂºF
+     * Test of celsiustofahrenheit method, of class TestTemperatura.
      */
     @Test
-    public void testCelsiustofahrenheit5() {
-        System.out.println("celsiustofahrenheit");
-        double num = -5.0;
-        double expResult = 23.0;
-        double result = TestTemperatura.celsiustofahrenheit(num);
-        assertEquals(expResult, result, 0.0001);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-    /**
-     * Test donde se comprueba la soluciÃ³n con 0 grados ÂºC a ÂºF
-     */
-    @Test
-    public void testCelsiustofahrenheit0() {
+    public void testCelsiustofahrenheit() {
         System.out.println("celsiustofahrenheit");
         double num = 0.0;
-        double expResult = 32.0;
+        double expResult = 0.0;
         double result = TestTemperatura.celsiustofahrenheit(num);
-        assertEquals(expResult, result, 0.0001);
+        assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
-    /**
-     * Test donde se comprueba la soluciÃ³n con 15 grados ÂºC a ÂºF
-     */
-    @Test
-    public void testCelsiustofahrenheit15() {
-        System.out.println("celsiustofahrenheit");
-        double num = 15.0;
-        double expResult = 59.0;
-        double result = TestTemperatura.celsiustofahrenheit(num);
-        assertEquals(expResult, result, 0.0001);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-    /**
-     * Test donde se comprueba la soluciÃ³n con 32 grados ÂºC a ÂºF
-     */
-    @Test
-    public void testCelsiustofahrenheit32() {
-        System.out.println("celsiustofahrenheit");
-        double num = 32.0;
-        double expResult = 89.6;
-        double result = TestTemperatura.celsiustofahrenheit(num);
-        assertEquals(expResult, result, 0.0001);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-    
+
     /**
      * Test of main method, of class TestTemperatura.
      */
@@ -147,6 +73,7 @@ public class TestTemperaturaTest {
         String[] args = null;
         TestTemperatura.main(args);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
+    
 }
