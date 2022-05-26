@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
- */
 package test.temperatura;
 
 import org.junit.After;
@@ -16,22 +12,22 @@ import static org.junit.Assert.*;
  * @author carlo
  */
 public class RomDecTest {
-    
+
     public RomDecTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -42,13 +38,13 @@ public class RomDecTest {
     @Test
     public void testRoman2dec() {
         System.out.println("roman2dec");
-        String rom = "";
+        String rom = "XXI";
         RomDec instance = new RomDec();
-        int expResult = 0;
+        int expResult = 21;
         int result = instance.roman2dec(rom);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -57,13 +53,13 @@ public class RomDecTest {
     @Test
     public void testDec2roman() {
         System.out.println("dec2roman");
-        int dec = 0;
+        int dec = 21;
         RomDec instance = new RomDec();
-        String expResult = "";
+        String expResult = "XXI";
         String result = instance.dec2roman(dec);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
-    
+
 }
