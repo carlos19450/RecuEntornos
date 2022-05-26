@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
+ */
 package test.temperatura;
 
 import org.junit.After;
@@ -9,25 +13,25 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Carlos ExpÃ³sito.
+ * @author carlo
  */
 public class DolarEuroTest {
-
+    
     public DolarEuroTest() {
     }
-
+    
     @BeforeClass
     public static void setUpClass() {
     }
-
+    
     @AfterClass
     public static void tearDownClass() {
     }
-
+    
     @Before
     public void setUp() {
     }
-
+    
     @After
     public void tearDown() {
     }
@@ -44,7 +48,7 @@ public class DolarEuroTest {
         double result = instance.dollar2euro(dollar);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -59,7 +63,7 @@ public class DolarEuroTest {
         double result = instance.euro2dollar(euro);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
-
+    
 }
